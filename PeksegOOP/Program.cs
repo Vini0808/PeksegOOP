@@ -26,7 +26,9 @@
             Croissant c2 = new Croissant("Croissant", 150, 10, "sajtosSok");
 
 			Console.WriteLine(c1);
+            c1.Megkostol();
 			Console.WriteLine(c2);
+            c2.Megkostol();
 
 		}
 	}
