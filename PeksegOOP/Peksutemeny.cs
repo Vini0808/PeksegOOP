@@ -8,9 +8,9 @@ namespace PeksegOOP
 {
 	internal abstract class Peksutemeny
 	{
-		private string nev;
-		private int ar;
-		private double mennyiseg;
+		protected string nev;
+		protected int ar;
+		protected double mennyiseg;
 
 		public Peksutemeny(string nev, int ar, double mennyiseg)
 		{
@@ -19,9 +19,9 @@ namespace PeksegOOP
 			this.mennyiseg = mennyiseg;
 		}
 
-		protected string Nev { get => nev; set => nev = value; }
-		protected int Ar { get => ar; set => ar = value; }
-		protected double Mennyiseg { get => mennyiseg; set => mennyiseg = value; }
+		public string Nev { get => nev; set => nev = value; }
+		public int Ar { get => ar; set => ar = value; }
+		public double Mennyiseg { get => mennyiseg; set => mennyiseg = value; }
 
 		public abstract void Megkostol();
 

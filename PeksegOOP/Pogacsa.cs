@@ -11,7 +11,8 @@ namespace PeksegOOP
 		public Pogacsa(string nev, int ar, double mennyiseg) : base(nev, ar, mennyiseg) { }
 		public override void Megkostol()
 		{
-			Console.WriteLine("Ez egy sós pogácsa.");
+			this.mennyiseg /= 2;
+			Console.WriteLine($"A {this.nev} nagyon finom!");
 		}
 	}
 }
